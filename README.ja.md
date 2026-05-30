@@ -178,13 +178,40 @@ mindmap
 
 **3. ✅ 練習問題（Practice Exam）**
 
+### ✅ Practice Exam — 20 問の概要
+
+各オリジナル問題が試す内容と触れる AWS サービス（*(2)* = 2 つ選択）:
+
+| # | 試す内容 | 主な AWS サービス & 概念 |
+|---|---|---|
+| 1 | RAG result reranking *(2)* | Knowledge Bases hybrid search, Bedrock reranker, OpenSearch |
+| 2 | Real-time & resilient KB sync | S3 Event Notifications, SQS, Lambda, Ingest/Delete API |
+| 3 | Analyze images/video, least overhead | Bedrock multimodal FMs, Step Functions, QuickSight |
+| 4 | Order a model-evaluation workflow | metrics → dataset → A/B test → quality gates (Step Functions) → report |
+| 5 | Enforce guardrails on every call | IAM condition key `bedrock:GuardrailIdentifier` |
+| 6 | Stop generation at a phrase | stop sequences (inference parameter) |
+| 7 | LLM endpoint optimization *(2)* | max sequence length, tensor parallelism, DJL, SageMaker |
+| 8 | Real-time streaming to a web UI | API Gateway WebSocket, Lambda, Bedrock streaming API, Prompt Management |
+| 9 | Prompt governance + long-term logging *(2)* | Bedrock Prompt Management, model invocation logging, S3 Object Lock |
+| 10 | Deploy a Python agent to AgentCore *(2)* | AgentCore SDK `@app.entrypoint`, starter toolkit |
+| 11 | Source lineage for generated content *(2)* | metadata tagging, AWS Glue Data Catalog |
+| 12 | RAG silent failure after a deploy | embedding model version / vector-space mismatch |
+| 13 | Monitor KB ingestion errors | Knowledge Base logging, CloudWatch Logs Insights |
+| 14 | Amazon Q Developer productivity *(2)* | code generation/refactor, test generation in CI/CD |
+| 15 | SageMaker inference type for image gen | Asynchronous vs Real-time / Serverless / Batch Transform |
+| 16 | Large-scale infrequent vector search | Amazon S3 Vectors vs OpenSearch / RDS / DynamoDB |
+| 17 | Which guardrail rule fired | guardrail tracing, GuardrailPolicyType vs GuardrailContentSource |
+| 18 | Secure auth + IdP, no long-lived creds *(2)* | Amazon Cognito (OIDC), IAM Identity Center (SAML) |
+| 19 | Peak throttling, same FM, cheapest | Cross-Region Inference vs Provisioned Throughput |
+| 20 | Redact PII before search | Amazon Comprehend (PII redaction) + Amazon Kendra |
+
 ## コンテンツ状況
 
 | セクション | vi | en | ja |
 |---|---|---|---|
 | Basic Knowledge (7 カテゴリ) | ✅ | ✅ | ✅ |
 | Case Studies | 🔲 | 🔲 | 🔲 |
-| Practice Exam | 🚧 サンプル | 🔲 | 🔲 |
+| Practice Exam | ✅ 20 | ✅ | ✅ |
 
 > 🔲 未着手 · 🚧 作成中 · ✅ ドラフト
 

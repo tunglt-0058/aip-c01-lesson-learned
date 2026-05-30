@@ -23,5 +23,5 @@
 ## Tiến độ
 | | |
 |---|---|
-| Số câu hiện có | 1 (mẫu) / 20 |
-| Trạng thái | 🚧 đang xây dựng |
+| Số câu hiện có | 20 / 20 |
+| Trạng thái | ✅ đã có bản nháp (vi) |
