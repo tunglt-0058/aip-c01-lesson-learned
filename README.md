@@ -185,7 +185,7 @@ mindmap
 
 | Section | vi | en | ja |
 |---|---|---|---|
-| Basic Knowledge (7 service categories) | ✅ 7/7 categories (vi) | 🔲 | 🔲 |
+| Basic Knowledge (7 service categories) | ✅ | ✅ | ✅ |
 | Case Studies | 🔲 | 🔲 | 🔲 |
 | Practice Exam | 🚧 sample | 🔲 | 🔲 |
 
