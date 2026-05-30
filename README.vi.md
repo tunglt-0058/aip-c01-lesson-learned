@@ -210,7 +210,7 @@ Mỗi câu test concept gì và chạm tới service AWS nào (*(2)* = Chọn HA
 | Phần | vi | en | ja |
 |---|---|---|---|
 | Basic Knowledge (7 nhóm service) | ✅ | ✅ | ✅ |
-| Case Studies | 🚧 1/14 | 🔲 | 🔲 |
+| Case Studies | ✅ 14 | 🔲 | 🔲 |
 | Practice Exam | ✅ 20 | ✅ | ✅ |
 
 > 🔲 chưa làm · 🚧 đang làm · ✅ đã có bản nháp

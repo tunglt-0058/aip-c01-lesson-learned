@@ -210,7 +210,7 @@ mindmap
 | セクション | vi | en | ja |
 |---|---|---|---|
 | Basic Knowledge (7 カテゴリ) | ✅ | ✅ | ✅ |
-| Case Studies | 🚧 1/14 | 🔲 | 🔲 |
+| Case Studies | ✅ 14 | 🔲 | 🔲 |
 | Practice Exam | ✅ 20 | ✅ | ✅ |
 
 > 🔲 未着手 · 🚧 作成中 · ✅ ドラフト
