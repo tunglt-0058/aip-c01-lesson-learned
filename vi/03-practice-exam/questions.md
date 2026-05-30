@@ -45,7 +45,7 @@ Ba từ khóa quyết định:
 ### 💡 Bài học
 - Khi đề nhấn mạnh "**LEAST development effort / operational overhead**", hãy nghiêng về **managed service** (ở đây là Bedrock Guardrails) thay vì tự build.
 - Phân biệt **ngăn chặn (prevent)** vs **phát hiện/cảnh báo (detect/alert)**: yêu cầu "không được để lộ" đòi cơ chế **chặn**, nên loại các phương án chỉ giám sát/log.
-- Một câu có thể kèm nhiều yêu cầu (PII + denied topics); ưu tiên giải pháp xử lý **trọn gói** trong một dịch vụ.
+- Mô tả ngắn gọn trong 1 câu có thể kèm nhiều yêu cầu (PII + denied topics); ưu tiên giải pháp xử lý **trọn gói** trong một dịch vụ.
 
 </details>
 
