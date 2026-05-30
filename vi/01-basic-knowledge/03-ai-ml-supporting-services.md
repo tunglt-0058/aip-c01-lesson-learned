@@ -32,7 +32,7 @@ mindmap
 
 ## Bảng tra nhanh
 
-| Service | Một câu | Domain liên quan |
+| Service | Mô tả ngắn gọn trong 1 câu | Domain liên quan |
 |---|---|---|
 | Comprehend | Phân tích văn bản: cảm xúc, thực thể, PII | D1, D2 |
 | Comprehend Medical | Comprehend chuyên y khoa | D1, D3 |
@@ -52,7 +52,7 @@ mindmap
 
 ### Amazon Comprehend
 
-> **Một câu:** "Chuyên gia phân tích văn bản" — đọc đoạn văn, rút ra insight có cấu trúc (JSON).
+> **Mô tả ngắn gọn trong 1 câu:** "Chuyên gia phân tích văn bản" — đọc đoạn văn, rút ra insight có cấu trúc (JSON).
 
 - **Giải quyết bài toán gì:** Sentiment (khen/chê/trung tính), Entity Recognition (tên/ngày/địa điểm), Language Detection, Topic Modeling, **PII detection/redaction**.
 - **Khi nào dùng (thay vì FM):** cần xử lý **khối lượng lớn, tốc độ mili-giây, chi phí rẻ, output JSON chuẩn 100%**. FM tốn kém & chậm hơn cho phân loại đơn giản, lại có thể "lắm lời" làm hỏng JSON.
@@ -67,7 +67,7 @@ Bản Comprehend huấn luyện riêng cho y khoa: đọc bệnh án lộn xộn
 
 ### Amazon Kendra
 
-> **Một câu:** "Google thu nhỏ cho công ty" — tìm kiếm theo **ngữ nghĩa**, trả về **đoạn văn gốc + confidence score**, không tự chế câu trả lời.
+> **Mô tả ngắn gọn trong 1 câu:** "Google thu nhỏ cho công ty" — tìm kiếm theo **ngữ nghĩa**, trả về **đoạn văn gốc + confidence score**, không tự chế câu trả lời.
 
 - **Giải quyết bài toán gì:** enterprise search hiểu câu hỏi tự nhiên.
 - **Khi nào dùng:** đề chỉ yêu cầu **"tìm và trả về tài liệu liên quan"**.
@@ -82,7 +82,7 @@ Bản Comprehend huấn luyện riêng cho y khoa: đọc bệnh án lộn xộn
 
 ### Amazon Lex
 
-> **Một câu:** "Người xây chatbot theo kịch bản" — dựa trên **Intents (ý định) + Slots (tham số)**, kỷ luật, không "ảo giác".
+> **Mô tả ngắn gọn trong 1 câu:** "Người xây chatbot theo kịch bản" — dựa trên **Intents (ý định) + Slots (tham số)**, kỷ luật, không "ảo giác".
 
 - **Giải quyết bài toán gì:** chatbot/voicebot quy trình rõ (đặt vé, đặt hàng) qua slot-filling.
 - **Khi nào dùng:** tác vụ **có cấu trúc**, cần ép người dùng điền đủ thông tin.
@@ -97,7 +97,7 @@ Khi user nói câu **không khớp kịch bản nào** (đang đặt vé bỗng 
 
 ### Amazon Rekognition
 
-> **Một câu:** "Đôi mắt AI" — phân tích ảnh/video: nhận đồ vật, khuôn mặt, chữ trong ảnh, và **kiểm duyệt nội dung**.
+> **Mô tả ngắn gọn trong 1 câu:** "Đôi mắt AI" — phân tích ảnh/video: nhận đồ vật, khuôn mặt, chữ trong ảnh, và **kiểm duyệt nội dung**.
 
 - **Giải quyết bài toán gì:** object/face detection, text-in-image, **Content Moderation** (`DetectModerationLabels`), **Custom Labels** (dạy nhận logo/linh kiện riêng).
 - **Khi nào dùng:** **tiền xử lý** ảnh trước khi đưa FM (kiểm duyệt rẻ & nhanh); nhận diện chuyên biệt.
@@ -108,7 +108,7 @@ Khi user nói câu **không khớp kịch bản nào** (đang đặt vé bỗng 
 
 ### Amazon Transcribe
 
-> **Một câu:** "Đôi tai AI" — chuyển giọng nói → văn bản (speech-to-text).
+> **Mô tả ngắn gọn trong 1 câu:** "Đôi tai AI" — chuyển giọng nói → văn bản (speech-to-text).
 
 - **Giải quyết bài toán gì:** transcribe audio; **Speaker Diarization** (phân biệt người nói); **Custom Vocabulary** (thuật ngữ riêng).
 - **Khi nào dùng:** xử lý audio/cuộc gọi trước khi FM tóm tắt/phân tích.
@@ -123,7 +123,7 @@ Khi user nói câu **không khớp kịch bản nào** (đang đặt vé bỗng 
 
 ### Amazon Polly
 
-> **Một câu:** "Miệng AI" — text-to-speech, đọc văn bản thành giọng nói tự nhiên.
+> **Mô tả ngắn gọn trong 1 câu:** "Miệng AI" — text-to-speech, đọc văn bản thành giọng nói tự nhiên.
 
 - **Khi nào dùng:** đọc lại câu trả lời cho user (voice UX), khâu cuối của luồng hội thoại.
 - **Dễ nhầm:** Polly = text→speech; Transcribe = speech→text. (D2)
@@ -135,7 +135,7 @@ Khi user nói câu **không khớp kịch bản nào** (đang đặt vé bỗng 
 
 ### Amazon Textract
 
-> **Một câu:** "Chuyên gia đọc form/bảng" — OCR + Key-Value + giữ nguyên cấu trúc bảng từ PDF/ảnh.
+> **Mô tả ngắn gọn trong 1 câu:** "Chuyên gia đọc form/bảng" — OCR + Key-Value + giữ nguyên cấu trúc bảng từ PDF/ảnh.
 
 - **Khi nào dùng:** **form cố định**, hoá đơn chuẩn, số hoá nhanh-rẻ-ổn định (deterministic).
 - **Khi nào KHÔNG dùng / dễ nhầm:** tài liệu **lộn xộn nhiều định dạng, cần hiểu ngữ cảnh** → **Bedrock Data Automation** (xem [nhóm 01](./01-amazon-bedrock-services.md)). Textract bóc *đúng cái có trên giấy*; Data Automation *suy luận ngữ nghĩa*.
@@ -148,7 +148,7 @@ Khi user nói câu **không khớp kịch bản nào** (đang đặt vé bỗng 
 
 ### Amazon Augmented AI (A2I)
 
-> **Một câu:** "Vòng lặp con người" — khi AI tự tin thấp, treo kết quả lại và đẩy cho người duyệt (human-in-the-loop).
+> **Mô tả ngắn gọn trong 1 câu:** "Vòng lặp con người" — khi AI tự tin thấp, treo kết quả lại và đẩy cho người duyệt (human-in-the-loop).
 
 - **Giải quyết bài toán gì:** chèn người vào quy trình AI khi **Confidence Score < ngưỡng** (vd < 80%).
 - **Khi nào dùng:** thấy "**human review / quality control / low-confidence results**" → chốt A2I.
@@ -169,7 +169,7 @@ Luồng đọc phim X-quang: **CI** tự train + check accuracy → trước khi
 
 ### Amazon Titan (gen 1 — rẻ, nhanh)
 
-> **Một câu:** "Thực tập sinh" — xử lý văn bản cơ bản, quy luật rõ, ưu tiên chi phí thấp.
+> **Mô tả ngắn gọn trong 1 câu:** "Thực tập sinh" — xử lý văn bản cơ bản, quy luật rõ, ưu tiên chi phí thấp.
 
 - **Gồm:** Titan Text, Titan Image Generator, Titan Embeddings (và Titan Multimodal Embeddings).
 - **Khi nào dùng:** tác vụ đơn giản khối lượng lớn (tóm tắt email, phân loại phòng ban) — nhanh, siêu rẻ.
@@ -178,7 +178,7 @@ Luồng đọc phim X-quang: **CI** tự train + check accuracy → trước khi
 
 ### Amazon Nova (gen 2 — đa phương thức)
 
-> **Một câu:** "Chuyên gia thâm niên" — đa phương thức (text/ảnh/video), context dài, giá tốt.
+> **Mô tả ngắn gọn trong 1 câu:** "Chuyên gia thâm niên" — đa phương thức (text/ảnh/video), context dài, giá tốt.
 
 - **Gồm & thông số (đã verify):**
   - **Nova Micro** — text-only, context **128K**.
@@ -192,7 +192,7 @@ Luồng đọc phim X-quang: **CI** tự train + check accuracy → trước khi
 
 ### Amazon Nova Multimodal Embeddings ⭐ (vũ khí cho RAG)
 
-> **Một câu:** Biến **chữ, ảnh, video, audio vào CÙNG một không gian vector** → tìm chéo phương thức (cross-modal retrieval).
+> **Mô tả ngắn gọn trong 1 câu:** Biến **chữ, ảnh, video, audio vào CÙNG một không gian vector** → tìm chéo phương thức (cross-modal retrieval).
 
 - **Giải quyết bài toán gì:** dùng 1 câu chữ tìm đoạn video tương ứng; dùng ảnh tìm sản phẩm. (AWS ra mắt **11/2025**, "industry's first unified embedding".)
 - **Khi nào dùng:** RAG đa phương thức — đề bài "tìm kiếm bằng ảnh, trả về text/video".

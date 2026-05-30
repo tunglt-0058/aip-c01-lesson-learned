@@ -31,7 +31,7 @@ mindmap
 
 ## Bảng tra nhanh
 
-| Service | Một câu | Domain liên quan |
+| Service | Mô tả ngắn gọn trong 1 câu | Domain liên quan |
 |---|---|---|
 | Amazon Q Developer | Trợ lý code + hạ tầng AWS (trong IDE & Console) | D2 |
 | Amazon Q Business | RAG doanh nghiệp đóng gói sẵn + phân quyền | D2, D3 |
@@ -43,7 +43,7 @@ mindmap
 
 ### Amazon Q Developer
 
-> **Một câu:** "Senior coder + chuyên gia AWS" sống trong IDE (VS Code, JetBrains) **và** trên AWS Console.
+> **Mô tả ngắn gọn trong 1 câu:** "Senior coder + chuyên gia AWS" sống trong IDE (VS Code, JetBrains) **và** trên AWS Console.
 
 - **Giải quyết bài toán gì:** tăng tốc viết code & quản hạ tầng AWS.
 - **Khả năng chính:**
@@ -64,7 +64,7 @@ Q Developer không gửi cả triệu dòng code lên mây. Nó dùng **Local Se
 
 ### Amazon Q Business
 
-> **Một câu:** "Thủ thư thông minh của doanh nghiệp" — một hệ **RAG đóng gói 100%**: cắm vào kho dữ liệu công ty, có sẵn giao diện chat.
+> **Mô tả ngắn gọn trong 1 câu:** "Thủ thư thông minh của doanh nghiệp" — một hệ **RAG đóng gói 100%**: cắm vào kho dữ liệu công ty, có sẵn giao diện chat.
 
 - **Giải quyết bài toán gì:** nhân viên (Sales/HR/Marketing) hỏi-đáp tài liệu nội bộ. Cắm **Data Connectors** (S3, SharePoint, Google Drive, Salesforce) → tự hút, băm, tạo vector, cho UI chat.
 - **Khi nào dùng:** enterprise search/RAG **ít công sức**, cần **phân quyền nghiêm ngặt**, multi-turn.
@@ -82,7 +82,7 @@ Q Developer không gửi cả triệu dòng code lên mây. Nó dùng **Local Se
 
 ### Amazon Q Apps (Q Business Apps)
 
-> **Một câu:** "Mì ăn liền" — template app dựng sẵn (HR Assistant, IT Helpdesk) **nằm trên** nền Q Business.
+> **Mô tả ngắn gọn trong 1 câu:** "Mì ăn liền" — template app dựng sẵn (HR Assistant, IT Helpdesk) **nằm trên** nền Q Business.
 
 - **Giải quyết bài toán gì:** triển khai cực nhanh (vài ngày), có sẵn System Prompt chuyên ngành + giao diện, không cần tự viết prompt/UI.
 - **Khi nào dùng:** cần bot HR/IT **nhanh nhất**, ít tùy biến.

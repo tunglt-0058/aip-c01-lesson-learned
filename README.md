@@ -5,8 +5,6 @@
 
 **🌐 Language:** **English** · [Tiếng Việt](./README.vi.md) · [日本語](./README.ja.md)
 
-> 📝 **Content status:** notes are authored in **Vietnamese first** (source of truth), then translated to English and Japanese. The most complete material currently lives in [`/vi`](./vi/). English (`/en`) and Japanese (`/ja`) are being filled in.
-
 ---
 
 ## What is this exam?
@@ -41,29 +39,153 @@ AIP-C01 is AWS's newest **Professional**-level AI certification (released Nov 20
 ├── README.ja.md         # Japanese landing
 ├── DISCLAIMER.md
 ├── LICENSE
-├── en/                  # 🇬🇧 English mirror
+├── en/                  # 🇬🇧 English
 │   ├── 01-basic-knowledge/   (index + 7 service categories)
 │   ├── 02-case-studies/
 │   └── 03-practice-exam/
-├── vi/                  # 🇻🇳 Vietnamese (source of truth)
+├── vi/                  # 🇻🇳 Vietnamese
 │   ├── 01-basic-knowledge/
 │   ├── 02-case-studies/
 │   └── 03-practice-exam/
-├── ja/                  # 🇯🇵 Japanese mirror
+├── ja/                  # 🇯🇵 Japanese
 └── assets/aws-icons/    # official AWS Architecture Icons for diagrams
 ```
 
 ## Where to start
 
-1. 📚 **Basic Knowledge** — concepts by service category ([en](./en/01-basic-knowledge/) · [vi](./vi/01-basic-knowledge/) · [ja](./ja/01-basic-knowledge/))
-2. 🧩 **Case Studies** ([en](./en/02-case-studies/) · [vi](./vi/02-case-studies/) · [ja](./ja/02-case-studies/))
-3. ✅ **Practice Exam** ([en](./en/03-practice-exam/) · [vi](./vi/03-practice-exam/) · [ja](./ja/03-practice-exam/))
+**1. 📚 Basic Knowledge** — concepts by service category ([en](./en/01-basic-knowledge/) · [vi](./vi/01-basic-knowledge/) · [ja](./ja/01-basic-knowledge/))
+
+### 🗺️ Overview mindmap — all 7 service categories
+
+A bird's-eye view of every service covered in Basic Knowledge (01 → 07):
+
+```mermaid
+mindmap
+  root((AIP-C01<br/>Services))
+    01 Amazon Bedrock
+      Access models
+        Bedrock core - FM API
+        Sync vs Streaming
+        On-Demand vs Provisioned
+        Fine-tuning
+        Model Evaluation
+        Cross-Region Inference
+      Knowledge and RAG
+        Knowledge Bases - RAG
+        Chunking strategies
+        Metadata filtering
+        Data Automation
+      Control and safety
+        Guardrails - content
+        Prompt Management
+        Prompt Flows
+      Agents
+        Bedrock Agents
+        AgentCore
+          Runtime - Memory - Gateway
+          Identity - Browser - Code Interpreter
+          Observability - Policy
+    02 SageMaker
+      Data prep
+        Ground Truth
+        Data Wrangler
+        Processing
+        Feature Store
+      Train and build
+        SageMaker AI
+        JumpStart
+        Training
+        Pipelines - CICD
+      Govern and explain
+        Model Registry
+        Model Monitor
+        Clarify - SHAP PDP bias
+      Deploy and workspace
+        Neo - edge
+        Unified Studio - lakehouse
+    03 AI ML Supporting
+      Text and search
+        Comprehend and Medical
+        Kendra
+      Voice Vision Chat
+        Lex
+        Rekognition
+        Transcribe
+        Polly
+      Document
+        Textract
+      Quality control
+        A2I - human in loop
+      Amazon FMs
+        Titan
+        Nova
+        Nova Multimodal Embeddings
+    04 Amazon Q
+      Q Developer
+        Code and security scan
+        IaC and CLI
+        Troubleshoot CloudWatch
+      Q Business
+        Managed RAG
+        Data Connectors - ACL
+        Plugins
+        Conversation memory
+      Q Apps - templates
+    05 Data and Analytics
+      Streaming
+        Kinesis Streams Firehose Analytics
+        MSK - Kafka
+      ETL
+        Glue - Data Catalog
+        EMR - Spark
+      Vector and search
+        OpenSearch - k-NN
+        S3 Vectors
+      Query and visualize
+        Athena - SQL on S3
+        QuickSight - BI
+    06 Integration and Orchestration
+      Orchestration and events
+        Step Functions
+        EventBridge
+      Compute and API
+        Lambda and Durable Functions
+        API Gateway - REST WebSocket
+        AppSync - GraphQL
+      Config
+        AppConfig - feature flags
+      Agent framework
+        Strands SDK
+        Multi-agent patterns
+        MCP
+    07 Security and Governance
+      Access
+        IAM - least privilege
+      Data protection
+        KMS - CMK
+        Secrets Manager
+        Parameter Store
+        VPC Endpoint
+      Monitoring
+        CloudTrail - who did what
+        CloudWatch - metrics
+      Model safety
+        Bedrock Guardrails
+        Macie - PII in S3
+      Cost and governance
+        Cost Explorer
+        Well-Architected GenAI Lens
+```
+
+**2. 🧩 Case Studies** ([en](./en/02-case-studies/) · [vi](./vi/02-case-studies/) · [ja](./ja/02-case-studies/))
+
+**3. ✅ Practice Exam** ([en](./en/03-practice-exam/) · [vi](./vi/03-practice-exam/) · [ja](./ja/03-practice-exam/))
 
 ## Content status
 
 | Section | vi | en | ja |
 |---|---|---|---|
-| Basic Knowledge (7 service categories) | 🚧 01 done, 02–07 pending | 🔲 | 🔲 |
+| Basic Knowledge (7 service categories) | ✅ 7/7 categories (vi) | 🔲 | 🔲 |
 | Case Studies | 🔲 | 🔲 | 🔲 |
 | Practice Exam | 🚧 sample | 🔲 | 🔲 |
 

@@ -60,7 +60,7 @@ AIP-C01 là chứng chỉ **Professional** mới nhất nhánh AI của AWS (ra 
 
 | Phần | vi | en | ja |
 |---|---|---|---|
-| Basic Knowledge (7 nhóm service) | 🚧 01 xong, 02–07 chờ | 🔲 | 🔲 |
+| Basic Knowledge (7 nhóm service) | ✅ 7/7 nhóm (vi) | 🔲 | 🔲 |
 | Case Studies | 🔲 | 🔲 | 🔲 |
 | Practice Exam | 🚧 mẫu | 🔲 | 🔲 |
 

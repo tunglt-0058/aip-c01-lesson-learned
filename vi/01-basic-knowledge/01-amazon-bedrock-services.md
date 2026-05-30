@@ -35,7 +35,7 @@ mindmap
 
 ## Bảng tra nhanh
 
-| Service | Một câu | Domain liên quan |
+| Service | Mô tả ngắn gọn trong 1 câu | Domain liên quan |
 |---|---|---|
 | Amazon Bedrock (core) | API thống nhất gọi nhiều FM, serverless | D1, D2 |
 | Foundation Model & Fine-tuning | "Sinh viên ưu tú" vs cho đi "học cao học" | D1 |
@@ -55,7 +55,7 @@ mindmap
 
 ### Amazon Bedrock (core)
 
-> **Một câu:** "Trung tâm thương mại" của các bộ não AI — không tự mua máy chủ hay tự train, chỉ gọi API là dùng được Claude, Llama, Titan…
+> **Mô tả ngắn gọn trong 1 câu:** "Trung tâm thương mại" của các bộ não AI — không tự mua máy chủ hay tự train, chỉ gọi API là dùng được Claude, Llama, Titan…
 
 - **Giải quyết bài toán gì:** truy cập nhiều Foundation Model qua **một** API. **Serverless** — gọi API, nhận kết quả, trả tiền theo dùng.
 - **Khi nào dùng:** gần như mọi dự án GenAI bắt đầu ở đây; làm PoC nhanh; cần đổi qua lại giữa các model.
@@ -80,7 +80,7 @@ mindmap
 
 ### Foundation Model (FM) & Fine-tuning
 
-> **Một câu:** FM là "sinh viên ưu tú vừa tốt nghiệp, biết mọi thứ chung chung". Fine-tuning là "gửi cậu ấy đi học cao học chuyên ngành tại công ty bạn".
+> **Mô tả ngắn gọn trong 1 câu:** FM là "sinh viên ưu tú vừa tốt nghiệp, biết mọi thứ chung chung". Fine-tuning là "gửi cậu ấy đi học cao học chuyên ngành tại công ty bạn".
 
 - **Giải quyết bài toán gì:** FM biết kiến thức tổng quát (đã "đọc" gần hết internet) nhưng **không** biết dữ liệu riêng của công ty bạn. Fine-tuning điều chỉnh "trọng số" model để thấm văn phong/thuật ngữ riêng.
 - **Khi nào dùng Fine-tuning:** khi cần model hiểu **sâu** thuật ngữ chuyên ngành mà prompt không giải quyết nổi.
@@ -93,7 +93,7 @@ mindmap
 
 ### Amazon Bedrock Knowledge Bases (RAG)
 
-> **Một câu:** Cho AI "thi mở sách" — nạp tài liệu công ty vào, AI tra cứu rồi trả lời đúng theo tài liệu (RAG — Retrieval-Augmented Generation).
+> **Mô tả ngắn gọn trong 1 câu:** Cho AI "thi mở sách" — nạp tài liệu công ty vào, AI tra cứu rồi trả lời đúng theo tài liệu (RAG — Retrieval-Augmented Generation).
 
 - **Giải quyết bài toán gì:** tự động **chunk → embed → lưu vector → truy xuất** để AI trả lời dựa trên tài liệu của bạn, giảm "bịa" (hallucination), **không cần fine-tune**.
 - **Cách hoạt động:** tài liệu (PDF/Word) → "băm" nhỏ (chunking) → biến thành vector số (embeddings) → lưu Vector DB. Khi user hỏi, câu hỏi cũng thành vector → tìm đoạn **gần nghĩa nhất** → nhét vào prompt cho AI đọc & trả lời.
@@ -120,7 +120,7 @@ mindmap
 
 ### Amazon Bedrock Data Automation
 
-> **Một câu:** "Chuyên viên phân tích thông minh" cho tài liệu lộn xộn — dùng GenAI đọc-hiểu ngữ cảnh, không chỉ bóc chữ.
+> **Mô tả ngắn gọn trong 1 câu:** "Chuyên viên phân tích thông minh" cho tài liệu lộn xộn — dùng GenAI đọc-hiểu ngữ cảnh, không chỉ bóc chữ.
 
 - **Giải quyết bài toán gì:** trích xuất dữ liệu từ tài liệu **không có cấu trúc cố định** (hóa đơn nhiều nhà cung cấp, bệnh án…) và xuất ra JSON chuẩn hóa. Tự hiểu "Amount Due" = "Total" = "Cần thanh toán".
 - **Khi nào dùng:** dữ liệu **bất quy tắc**, nhiều định dạng khác nhau, cần AI tự hiểu ngữ cảnh.
@@ -133,7 +133,7 @@ mindmap
 
 ### Amazon Bedrock Guardrails
 
-> **Một câu:** Lan can an toàn cho AI — kiểm soát **NỘI DUNG**: chặn từ độc hại và che thông tin cá nhân (PII).
+> **Mô tả ngắn gọn trong 1 câu:** Lan can an toàn cho AI — kiểm soát **NỘI DUNG**: chặn từ độc hại và che thông tin cá nhân (PII).
 
 - **Giải quyết bài toán gì:** lọc hate/insults/sexual/violence (mức low/medium/high), **che PII**, chặn denied topics, chống prompt injection; áp đồng nhất cho nhiều model.
 - **Khi nào dùng:** output có thể chạm người dùng cuối; đề yêu cầu "ít công sức phát triển nhất" để chặn PII.
@@ -146,7 +146,7 @@ mindmap
 
 ### Amazon Bedrock Prompt Management
 
-> **Một câu:** "Git cho prompt" — quản version, biến (variables), và quy trình phê duyệt trước khi lên Production.
+> **Mô tả ngắn gọn trong 1 câu:** "Git cho prompt" — quản version, biến (variables), và quy trình phê duyệt trước khi lên Production.
 
 - **Giải quyết bài toán gì:** **không hard-code prompt** trong source. Lưu prompt trên cloud, đánh version (v1, v2), gọi qua ARN; có approval workflow (author/reviewer/admin).
 - **Khi nào dùng:** doanh nghiệp nhiều app, cần governance + cho team Non-IT sửa prompt mà không phải deploy lại code.
@@ -159,7 +159,7 @@ mindmap
 
 ### Amazon Bedrock Prompt Flows
 
-> **Một câu:** Kéo-thả nối nhiều bước AI thành một **sơ đồ DAG** (đồ thị có hướng, không vòng lặp), thay vì viết code điều phối.
+> **Mô tả ngắn gọn trong 1 câu:** Kéo-thả nối nhiều bước AI thành một **sơ đồ DAG** (đồ thị có hướng, không vòng lặp), thay vì viết code điều phối.
 
 - **Giải quyết bài toán gì:** luồng AI **tuyến tính nhiều bước, có rẽ nhánh** (vd: nhận text → phân loại → tóm tắt → sinh phản hồi), component tái dùng, pre/post-processing.
 - **Khi nào dùng:** quy trình rõ ràng, đi một chiều, rẽ nhánh theo điều kiện.
@@ -172,7 +172,7 @@ mindmap
 
 ### Amazon Bedrock Agents
 
-> **Một câu:** "Đồ chơi lắp ráp sẵn" — tạo nhanh một AI Agent tự chủ ngay trên Console, không cần viết code điều phối.
+> **Mô tả ngắn gọn trong 1 câu:** "Đồ chơi lắp ráp sẵn" — tạo nhanh một AI Agent tự chủ ngay trên Console, không cần viết code điều phối.
 
 - **Giải quyết bài toán gì:** AI tự suy nghĩ & quyết định gọi tool nào. Bạn cấp 4 món:
   - **Instructions (chỉ thị):** *bắt buộc* — "đóng vai nhân viên hỗ trợ…".
@@ -189,7 +189,7 @@ mindmap
 
 ### Amazon Bedrock AgentCore
 
-> **Một câu:** Nếu Bedrock Agents là "đồ chơi lắp ráp sẵn" thì **AgentCore là xưởng cơ khí** — hạ tầng vận hành agent **quy mô lớn, production**, framework-agnostic & model-agnostic.
+> **Mô tả ngắn gọn trong 1 câu:** Nếu Bedrock Agents là "đồ chơi lắp ráp sẵn" thì **AgentCore là xưởng cơ khí** — hạ tầng vận hành agent **quy mô lớn, production**, framework-agnostic & model-agnostic.
 
 - **Giải quyết bài toán gì:** chạy/điều hành agent phức tạp ở mức enterprise, gồm **8 thành phần module** lắp ghép.
 - **Khi nào dùng:** agent chạy lâu, state phức tạp, dùng framework riêng, cần bảo mật/giám sát cấp production.
@@ -198,7 +198,7 @@ mindmap
 
 #### 8 thành phần AgentCore
 
-| Thành phần | Một câu | Ghi nhớ / bẫy |
+| Thành phần | Mô tả ngắn gọn trong 1 câu | Ghi nhớ / bẫy |
 |---|---|---|
 | **Runtime** | Môi trường chạy riêng cho agent, microVM cách ly | Session dài **tối đa 8 giờ** (Lambda chỉ 15 phút) |
 | **Memory** | Trí nhớ ngắn hạn (session) + dài hạn (tóm tắt → Vector DB) | Dài hạn vượt qua ranh giới session |

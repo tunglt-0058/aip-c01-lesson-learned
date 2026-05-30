@@ -60,7 +60,7 @@ AIP-C01 は AWS の最新の **Professional** レベル AI 認定（2025年11月
 
 | セクション | vi | en | ja |
 |---|---|---|---|
-| Basic Knowledge (7 カテゴリ) | 🚧 01 完了, 02–07 待ち | 🔲 | 🔲 |
+| Basic Knowledge (7 カテゴリ) | ✅ 7/7 カテゴリ (vi) | 🔲 | 🔲 |
 | Case Studies | 🔲 | 🔲 | 🔲 |
 | Practice Exam | 🚧 サンプル | 🔲 | 🔲 |
 
