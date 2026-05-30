@@ -3,9 +3,7 @@
 > Ghi chép & tổng hợp kiến thức tự học cho kỳ thi **AWS Certified Generative AI Developer – Professional (AIP-C01)**.
 > Tài liệu **không chính thức**, không liên kết với AWS. Toàn bộ câu hỏi và case study là **nội dung gốc (original)**. Xem [DISCLAIMER](./DISCLAIMER.md).
 
-**🌐 Ngôn ngữ:** [English](./README.md) · **Tiếng Việt (bản gốc)** · [日本語](./README.ja.md)
-
-> 📝 **Trạng thái:** nội dung được viết **tiếng Việt trước** (bản gốc), sau đó dịch sang English/Japanese. Nội dung đầy đủ nhất hiện nằm ở [`/vi`](./vi/).
+**🌐 Ngôn ngữ:** [English](./README.md) · **Tiếng Việt** · [日本語](./README.ja.md)
 
 ---
 
@@ -37,30 +35,154 @@ AIP-C01 là chứng chỉ **Professional** mới nhất nhánh AI của AWS (ra 
 ```
 .
 ├── README.md            # English (mặc định)
-├── README.vi.md         # Tiếng Việt (bản gốc)
+├── README.vi.md         # Tiếng Việt
 ├── README.ja.md         # 日本語
 ├── DISCLAIMER.md
 ├── LICENSE
-├── en/                  # 🇬🇧 Bản dịch tiếng Anh
-├── vi/                  # 🇻🇳 Bản gốc (master)
+├── en/                  # 🇬🇧 English
+├── vi/                  # 🇻🇳 Tiếng Việt
 │   ├── 01-basic-knowledge/   (index + 7 nhóm service)
 │   ├── 02-case-studies/
 │   └── 03-practice-exam/
-├── ja/                  # 🇯🇵 Bản dịch tiếng Nhật
+├── ja/                  # 🇯🇵 日本語
 └── assets/aws-icons/    # AWS Architecture Icons để vẽ diagram
 ```
 
 ## Bắt đầu từ đâu
 
-1. 📚 **[Kiến thức nền (Basic Knowledge)](./vi/01-basic-knowledge/)** — nắm concept theo từng nhóm service.
-2. 🧩 **[Case Studies](./vi/02-case-studies/)** — áp dụng vào tình huống thực tế.
-3. ✅ **[Practice Exam](./vi/03-practice-exam/)** — tự kiểm tra + học cách phân tích câu scenario.
+**1. 📚 [Kiến thức nền (Basic Knowledge)](./vi/01-basic-knowledge/)** — nắm concept theo từng nhóm service.
+
+### 🗺️ Mindmap tổng quan — 7 nhóm service
+
+Nhìn nhanh toàn bộ service được phủ trong Basic Knowledge (01 → 07):
+
+```mermaid
+mindmap
+  root((AIP-C01<br/>Services))
+    01 Amazon Bedrock
+      Access models
+        Bedrock core - FM API
+        Sync vs Streaming
+        On-Demand vs Provisioned
+        Fine-tuning
+        Model Evaluation
+        Cross-Region Inference
+      Knowledge and RAG
+        Knowledge Bases - RAG
+        Chunking strategies
+        Metadata filtering
+        Data Automation
+      Control and safety
+        Guardrails - content
+        Prompt Management
+        Prompt Flows
+      Agents
+        Bedrock Agents
+        AgentCore
+          Runtime - Memory - Gateway
+          Identity - Browser - Code Interpreter
+          Observability - Policy
+    02 SageMaker
+      Data prep
+        Ground Truth
+        Data Wrangler
+        Processing
+        Feature Store
+      Train and build
+        SageMaker AI
+        JumpStart
+        Training
+        Pipelines - CICD
+      Govern and explain
+        Model Registry
+        Model Monitor
+        Clarify - SHAP PDP bias
+      Deploy and workspace
+        Neo - edge
+        Unified Studio - lakehouse
+    03 AI ML Supporting
+      Text and search
+        Comprehend and Medical
+        Kendra
+      Voice Vision Chat
+        Lex
+        Rekognition
+        Transcribe
+        Polly
+      Document
+        Textract
+      Quality control
+        A2I - human in loop
+      Amazon FMs
+        Titan
+        Nova
+        Nova Multimodal Embeddings
+    04 Amazon Q
+      Q Developer
+        Code and security scan
+        IaC and CLI
+        Troubleshoot CloudWatch
+      Q Business
+        Managed RAG
+        Data Connectors - ACL
+        Plugins
+        Conversation memory
+      Q Apps - templates
+    05 Data and Analytics
+      Streaming
+        Kinesis Streams Firehose Analytics
+        MSK - Kafka
+      ETL
+        Glue - Data Catalog
+        EMR - Spark
+      Vector and search
+        OpenSearch - k-NN
+        S3 Vectors
+      Query and visualize
+        Athena - SQL on S3
+        QuickSight - BI
+    06 Integration and Orchestration
+      Orchestration and events
+        Step Functions
+        EventBridge
+      Compute and API
+        Lambda and Durable Functions
+        API Gateway - REST WebSocket
+        AppSync - GraphQL
+      Config
+        AppConfig - feature flags
+      Agent framework
+        Strands SDK
+        Multi-agent patterns
+        MCP
+    07 Security and Governance
+      Access
+        IAM - least privilege
+      Data protection
+        KMS - CMK
+        Secrets Manager
+        Parameter Store
+        VPC Endpoint
+      Monitoring
+        CloudTrail - who did what
+        CloudWatch - metrics
+      Model safety
+        Bedrock Guardrails
+        Macie - PII in S3
+      Cost and governance
+        Cost Explorer
+        Well-Architected GenAI Lens
+```
+
+**2. 🧩 [Case Studies](./vi/02-case-studies/)** — áp dụng vào tình huống thực tế.
+
+**3. ✅ [Practice Exam](./vi/03-practice-exam/)** — tự kiểm tra + học cách phân tích câu scenario.
 
 ## Trạng thái nội dung
 
 | Phần | vi | en | ja |
 |---|---|---|---|
-| Basic Knowledge (7 nhóm service) | ✅ 7/7 nhóm (vi) | 🔲 | 🔲 |
+| Basic Knowledge (7 nhóm service) | ✅ | ✅ | ✅ |
 | Case Studies | 🔲 | 🔲 | 🔲 |
 | Practice Exam | 🚧 mẫu | 🔲 | 🔲 |
 
