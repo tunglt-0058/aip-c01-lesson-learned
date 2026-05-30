@@ -6,11 +6,12 @@ Các case study **viết lại hoàn toàn (original)** từ pattern kiến trú
 
 > ⚠️ **Bản quyền:** không copy nội dung/ảnh từ AWS Skill Builder. Mỗi case study là tình huống tự viết (khác ngành, khác bối cảnh, khác số liệu); mọi diagram do tác giả tự vẽ.
 
-## Danh sách
+## Danh sách (14 case studies)
 
 | # | Case study | Concept chính | Domain | File |
 |---|---|---|---|---|
-| 01 | «tên» | «vd: managed RAG để giảm hallucination» | D1 | [→](./case-01-xxx.md) |
+| 01 | Chatbot CSKH ngân hàng đa quốc gia | Kiến trúc GenAI end-to-end (FM → RAG → CRM → mạng toàn cầu → GenAIOps) | D1–D4 | [→](./case-01-multinational-financial-chatbot.md) |
+| 02–14 | *(đang xây dựng)* | | | |
 
 > Dùng [`_case-template.md`](./_case-template.md) làm khuôn cho case study mới.
 

@@ -213,7 +213,7 @@ What each original question tests and the AWS services it touches (*(2)* = Selec
 | Section | vi | en | ja |
 |---|---|---|---|
 | Basic Knowledge (7 service categories) | ✅ | ✅ | ✅ |
-| Case Studies | 🔲 | 🔲 | 🔲 |
+| Case Studies | 🚧 1/14 | 🔲 | 🔲 |
 | Practice Exam | ✅ 20 | ✅ | ✅ |
 
 > 🔲 not started · 🚧 in progress · ✅ drafted
